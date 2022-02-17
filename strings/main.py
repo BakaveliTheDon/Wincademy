@@ -4,6 +4,7 @@ __human_name__ = 'strings'
 
 # Add your code after this line
 
+from ntpath import join
 import re
 
 
@@ -19,11 +20,12 @@ print(scorers)
 report = f'{NL_goal1} scored in the {goal_0}nd minute\n{NL_goal2} scored in the {goal_1}th minute'
 print(report)
 
-player = 'Hennadiy Lytovchenko'
+player = 'Marco van Basten'
 first_name = player[:player.find(' ')]
 print(first_name)
 
-last_name = player.rsplit()[-1]
+# last_name = player[len(first_name):]
+last_name = player[player.find(' '):][1:]
 print(last_name)
 last_name_len = len(last_name)
 name_short = first_name[0] + '. ' + last_name
