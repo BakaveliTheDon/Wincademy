@@ -20,13 +20,11 @@ report = f'{NL_goal1} scored in the {goal_0}nd minute\n{NL_goal2} scored in the 
 print(report)
 
 player = 'Hennadiy Lytovchenko'
-first_name = player[:8]
-index = player.find('H')
-indexlast = player.find('y')
-print(indexlast)
-index = player.find('L')
-print(index)
-last_name = player[9:]
+first_name = player[:player.find(' ')]
+print(first_name)
+
+last_name = player.rsplit()[-1]
+print(last_name)
 last_name_len = len(last_name)
 name_short = first_name[0] + '. ' + last_name
 print(f'{first_name[0]}. {last_name}')
