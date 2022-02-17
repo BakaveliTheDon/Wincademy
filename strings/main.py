@@ -25,7 +25,7 @@ first_name = player[:player.find(' ')]
 print(first_name)
 
 # last_name = player[len(first_name):]
-last_name = player[player.find(' '):][1:]
+last_name = player[player.find(' ')+1:]
 print(last_name)
 last_name_len = len(last_name)
 name_short = first_name[0] + '. ' + last_name

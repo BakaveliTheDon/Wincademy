@@ -29,7 +29,7 @@ double('hey')
 
 def initials(name):
     first = name[0].upper()
-    last = name[name.find(' ')+1].upper()
+    last = name[name.find(' ')+1:].upper()
     return f'{first}. {last}.'
 
-initials('babaksdfsdfsdfd mirjalili')    
+initials('babak mirjalili')    
